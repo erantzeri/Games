@@ -1,0 +1,40 @@
+<%= form_for(@team) do |f| %>
+  <% if @team.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@team.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+      <ul>
+      <% @team.errors.full_messages.each do |msg| %>
+        <li><strong><%= msg %></strong></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %> 
+
+  <div class="field">
+    <%= f.label 'Event' %>&nbsp;&nbsp;    <%= f.select :event, options_for_select([["Select One", ""], "Darts", "Cornhole", "BeerPong"]), :class => 'genForm_dropBox' %><br /><br />
+  </div><div class="field">
+    <%= f.label 'Team Name' %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label 'Team Captain' %><br />
+    <%= f.text_field :captain %>
+  </div>
+  <div class="field">
+    <%= f.label 'Member 1' %><br />
+    <%= f.text_field :member2 %>
+  </div>
+  <div class="field">
+    <%= f.label 'Member 2' %><br />
+    <%= f.text_field :member3 %>
+  </div>
+  <div class="field">
+    <%= f.label 'Member 3' %><br />
+    <%= f.text_field :member4 %>
+  </div>
+  <br />
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

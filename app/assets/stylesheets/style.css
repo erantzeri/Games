@@ -1,0 +1,191 @@
+/* 
+
+Developed by Erantzeri Corona for Hulu.
+2012 Copyright Hulu.  All rights reserved.
+
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	padding: 10px;
+	padding-bottom: 80px;
+}
+
+h1 {
+	color: #505050;
+}
+
+h2 {
+	color: #505050;
+}
+
+p {
+	color: #505050;
+	font-size: 18px;
+}
+
+a:link {
+	color: #646464;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #2e73b9;
+	font-weight: bold;	
+}
+
+a:visited {
+	color: #646464;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+li a:hover {
+	color: #2e73b9;
+	font-weight: bold;	
+}
+
+
+
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
+}
+
+#box {
+	width: 800px;
+	height: 600px;
+	border: 1px solid #FFFFFF;
+}
+
+#border {
+	margin-left: 100px;
+}
+
+
+#header {
+	width: 500px;
+	height: 420px;
+	background-image: url(logo.jpg);
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+table a,
+table a:link,
+table a:visited {
+	border:none;
+	}							
+	
+img {
+	border:0;
+	margin-top:.5em;
+	}	
+table {
+	width:90%;
+	border-top:1px solid #cce9a6;
+	border-right:1px solid #cce9a6;
+	margin:1em auto;
+		border-collapse:collapse;
+	}
+caption {
+	color: #9ba9b4;
+	font-size:.94em;
+		letter-spacing:.1em;
+		margin:1em 0 0 0;
+		padding:0;
+		caption-side:top;
+		text-align:center;
+	}	
+tr.odd td	{
+	background:#f7fbff
+	}
+tr.odd .column1	{
+	background:#f4f9fe;
+	}	
+.column1	{
+	background:#f9fcfe;
+	}
+td {
+	color:#678197;
+	border-bottom:1px solid #cce9a6;
+	border-left:1px solid #cce9a6;
+	padding:.3em 1em;
+	text-align:center;
+	}				
+th {
+	font-weight:normal;
+	color: #678197;
+	text-align:left;
+	border-bottom: 1px solid #cce9a6;
+	border-left:1px solid #cce9a6;
+	padding:.3em 1em;
+	}							
+thead th {
+	background:#f4f9fe;
+	text-align:center;
+	font:bold 1.2em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#66a3d3
+	}	
+tfoot th {
+	text-align:center;
+	background:#f4f9fe;
+	}	
+tfoot th strong {
+	font:bold 1.2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	margin:.5em .5em .5em 0;
+	color:#66a3d3;
+		}		
+tfoot th em {
+	color:#f03b58;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-style: normal;
+	}
+
+
+#message {
+	width: 800px;
+	height: 50px;
+	margin: 0 auto;
+	padding-top: 16px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+#button {
+	width: 233px;
+	height: 56px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 800px;
+	height: 80px;
+	padding-top: 40px;
+	margin: 0 auto;
+	text-align: center;
+	background-image: url(bar.jpg);
+	background-repeat: no-repeat;
+}
+
+#footer li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 80px;
+}

@@ -1,0 +1,16 @@
+
+<div id="header">&nbsp;</div>
+<div id="message">
+	<% if @total == 0 %>
+		<p>There are no teams registered. Be first!!</p>
+	<% else %>
+		<% if @total == 1 %>
+			<p>There is <%= pluralize(@total, 'team') -%> registered already.</p>
+			<% else %>
+				<p>There are <%= @total %> teams registered already.</p>
+			<% end %>
+	<% end %>
+</div>		
+<div id="button"><%= link_to (image_tag "button.jpg"), new_team_path %></a></div>
+<br />
+

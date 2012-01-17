@@ -1,0 +1,39 @@
+<%= image_tag "banner.jpg" %><br />
+
+<div id="border">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Event:</b>
+  <%= @team.event %>
+</p>
+<p>
+  <b>Name:</b>
+  <%= @team.name %>
+</p>
+
+<p>
+  <b>Captain:</b>
+  <%= @team.captain %>
+</p>
+
+<p>
+  <b>Member2:</b>
+  <%= @team.member2 %>
+</p>
+
+<p>
+  <b>Member3:</b>
+  <%= @team.member3 %>
+</p>
+
+<p>
+  <b>Member4:</b>
+  <%= @team.member4 %>
+</p>
+
+<br /><br />
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %><br><br>
+</div>
+

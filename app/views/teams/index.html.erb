@@ -1,0 +1,47 @@
+<%= image_tag "banner.jpg" %><br />
+
+<div id="message">
+	<% if @total == 0 %>
+		<h1>There are no teams registered. <br /> Be first!!</h1>
+		<br /><br />
+		<div id="button"><%= link_to (image_tag "button.jpg"), new_team_path %></a></div>
+		<br /><br />
+		<h2>Go ahead... you know you want to be <br /> the first Official Hulu Games Champion! </h2>
+
+	
+	<% else %>
+	
+
+	<h1>The Official Hulu Games Teams</h1>
+
+	<div id="table">
+		<table>	
+  			<tr class="column1">
+				<th><strong>Event</strong></th>
+    			<th><strong>Team Name</strong></th>
+    			<th><strong>Captain</strong></th>
+    			<th><strong>Member2</strong></th>
+    			<th><strong>Member3</strong></th>
+    			<th><strong>Member4</strong></th>
+    			<th></th>
+    			<th></th>
+  			</tr>
+
+
+			<% @teams.each do |team| %>
+  			<tr>
+				<td><%= team.event %></td>
+    			<td><%= team.name %></td>
+    			<td><%= team.captain %></td>
+    			<td><%= team.member2 %></td>
+    			<td><%= team.member3 %></td>
+    			<td><%= team.member4 %></td>
+    			<td><%= link_to 'Edit', edit_team_path(team) %></td>
+				<td><%= link_to 'Delete', team, :confirm => 'Are you sure?', :method => :delete %></td>
+  			</tr>
+			<% end %>
+		</table>
+	</div>
+	<br />
+	<% end %>
+</div>
