@@ -1,20 +1,21 @@
 <%= link_to (image_tag "banner.jpg"), welcome_path %>
 
-<div id="message">
-	<% if @total == 0 %>
-		<h1>There are no teams registered. <br /> Be first!!</h1>
-		<br /><br />
-		<div id="button"><%= link_to (image_tag "button.jpg"), new_team_path %></a></div>
-		<br /><br />
-		<h2>Go ahead... you know you want to be <br /> the first Official Hulu Games Champion! </h2>
 
+	<% if @total == 0 %>
+		<div id="message">
+			<h1>There are no teams registered. <br /> Be first!!</h1>
+			<br /><br />
+			<div id="button"><%= link_to (image_tag "button.jpg"), new_team_path %></a></div>
+			<br /><br />
+			<h2>Go ahead... you know you want to be <br /> the first Official Hulu Games Champion! </h2>
+		</div>
 	
 	<% else %>
 	
 
 	<h1>The Official Hulu Games Teams</h1>
 
-	<div id="table">
+
 		<table>	
   			<tr class="column1">
 				<th><strong>Event</strong></th>
@@ -40,8 +41,6 @@
 				<td><%= link_to 'Delete', team, :confirm => 'Are you sure?', :method => :delete %></td>
   			</tr>
 			<% end %>
-		</table>
-	</div>
-	<br />
-	<% end %>
+
+  <% end %>
 </div>

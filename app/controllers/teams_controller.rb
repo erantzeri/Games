@@ -13,7 +13,8 @@ class TeamsController < ApplicationController
   
   def welcome
      @teams = Team.all
-     @total = @teams.count     
+     @total = @teams.count  
+     @max = 12   
   end
   
   def event

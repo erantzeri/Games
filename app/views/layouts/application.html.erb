@@ -10,9 +10,11 @@
 <body>
 	<div id="container">
 		
-		<%= yield %>
-
-		<div id="footer">
+		<div id="box">	
+			<%= yield %>
+    	</div>
+	
+	 	<div id="footer">
 			<ul>
 				<li><%= link_to "Welcome", welcome_path %></li>
 				<li><%= link_to "Teams", teams_path %></li>
@@ -20,7 +22,8 @@
 				<li><%= link_to "FAQs", faqs_path %></li>
 				<li><%= link_to "Nulugans", nulugans_path %></li>
 			</ul>	
-		</div>	
+	  	</div>
+	
 	</div>
 </body>
 </html>
