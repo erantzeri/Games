@@ -7,7 +7,7 @@
 		<% if @total == 1 %>
 			<p>There is <%= pluralize(@total, 'team') -%> registered already.  There's only <%= 6 - @total -%>' spots left!</p>
 			<% else %>
-				<p>There are <%= @total %> teams registered already.  &nbsp;There's only [<%= @max - @total -%>] spots left.</p>
+				<p>There are <%= @total %> teams registered already.  &nbsp;There're only [<%= @max - @total -%>] spots left.</p>
 			<% end %>
 	<% end %>
 </div>		
